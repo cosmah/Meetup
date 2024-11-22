@@ -1,19 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>MeetUp !</Text>
+    <View className="flex-1 justify-center items-center bg-red-500">
+      <Text className="text-white text-lg">MeetUp !</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
